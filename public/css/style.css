@@ -1,0 +1,54 @@
+.router-link-exact-active,
+.nav-link:focus {
+    background: rgb(0, 180, 39) !important;
+    color: white !important;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.vue-routers-content {
+    margin-top: 57px;
+}
+
+@media print {
+    .print-hide {
+        display: none;
+    }
+}
+
+@page {
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 50px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #343A40;
+    outline: 1px solid slategrey;
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 8px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+    /* box-shadow: inset 0 0 6px rgb(255 255 255) */
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    box-shadow: inset 0px 0px 10px rgb(255 255 255);
+    /* background-color: #ffffff; */
+    outline: 1px solid #0c7cec;
+    border-radius: 50px;
+}
