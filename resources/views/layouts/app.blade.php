@@ -79,7 +79,7 @@ $siteinfo = DB::table('site_infos')->whereIn('user_id', [1,2])->first();
         </nav>
 
         <main class="py-4">
-            <h5 class="text-center">Welcome to <span class="text-primary">SkyBarta</span></h5>
+            <h5 class="text-center">Welcome to <span class="text-primary">{{ $siteinfo->title }}</span></h5>
             @yield('content')
         </main>
     </div>

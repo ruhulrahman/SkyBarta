@@ -27,24 +27,24 @@ class AuthServiceProvider extends ServiceProvider
     {
         $this->registerPolicies();
 
-        $super = '';
-        $admin = "";
-        $author ="";
-        $user ="";
+        // $super = '';
+        // $admin = "";
+        // $author ="";
+        // $user ="";
 
-        $roles = Role::all();
+        // $roles = Role::all();
 
-        foreach ($roles as $role) {
-             if($role->name == "Super"){
-               $super = $role->id;
-            }else if($role->name == "Admin"){
-               $admin = $role->id;
-            }else if($role->name == "Admin"){
-               $author = $role->id;
-            }else if($role->name == "Admin"){
-               $user = $role->id;
-            }
-        }
+        // foreach ($roles as $role) {
+        //      if($role->name == "Super"){
+        //        $super = $role->id;
+        //     }else if($role->name == "Admin"){
+        //        $admin = $role->id;
+        //     }else if($role->name == "Admin"){
+        //        $author = $role->id;
+        //     }else if($role->name == "Admin"){
+        //        $user = $role->id;
+        //     }
+        // }
 
 
         Gate::define('isSuperAdmin', function ($user) {

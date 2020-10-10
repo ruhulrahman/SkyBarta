@@ -34,7 +34,7 @@
             </div>
             <div class="modal-body">
                 <div class="form-group">
-                    <label for="bio">Privacy</label>
+                    <label for="privacy">Privacy</label>
                     <select v-show="editMode===true" v-model="postform.privacy_id" class="form-control" :class="{ 'is-invalid': postform.errors.has('privacy_id') }">
                         <option v-for="(privacy, index) in privacies" :key="index" :selected="postform.privacy_id===privacy.id" :value="privacy.id" v-text="privacy.name">
                         </option>
@@ -46,7 +46,6 @@
                     <has-error :form="postform" field="privacy_id"></has-error>
                 </div>
                 <div class="form-group">
-                    <label for="bio">Bio</label>
                     <textarea placeholder="What's on your mind?........" class="form-control" id="bio" rows="2" v-model="postform.desc" :class="{ 'is-invalid': postform.errors.has('desc') }"></textarea>
                     <has-error :form="postform" field="desc"></has-error>
                 </div>
