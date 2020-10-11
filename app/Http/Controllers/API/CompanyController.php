@@ -10,7 +10,8 @@ class CompanyController extends Controller
 {
     public function index()
     {
-        return Company::all();
+        $auth_id = auth("api")->user()->id;
+        return Company::where('user_id', $auth_id)->orderBy('name', 'asc')->get();
     }
 
     public function create()
