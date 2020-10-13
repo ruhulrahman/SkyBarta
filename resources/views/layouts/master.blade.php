@@ -320,7 +320,7 @@ $siteinfo = DB::table('site_infos')->whereIn('user_id', [1,2])->first();
           </li>
           @endcanany
 
-          @canany(['isAdmin','isAuthor', 'isSuperAdmin'])
+          @canany(['isUser','isAdmin','isAuthor', 'isSuperAdmin'])
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-cog yellow"></i>
@@ -475,7 +475,7 @@ $siteinfo = DB::table('site_infos')->whereIn('user_id', [1,2])->first();
   <!-- /.content-wrapper -->
 
   <footer class="main-footer">
-    <strong>Copyright &copy; and all rights reserved. by <a href="www.facebook.com/Ruhul.14">Ruhul Amin</a>. Software developer and founder of {{ $siteinfo->title }}</strong>
+    <strong>Copyright &copy; and all rights reserved. by <a href="https://www.facebook.com/Ruhul14.02">Ruhul Amin</a>. Software developer and founder of {{ $siteinfo->title }}</strong>
 
     <div class="float-right d-none d-sm-inline-block">
       <b>Version</b> 1.0

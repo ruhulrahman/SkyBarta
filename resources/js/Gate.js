@@ -24,13 +24,14 @@ export default class Gate {
         return this.user.role_id === 2
     }
 
-    isAuthor() {
+    isUser() {
         return this.user.role_id === 3
     }
 
-    isUser() {
+    isAuthor() {
         return this.user.role_id === 4
     }
+
 
 
     isAdminOrAuthorOrSuper() {

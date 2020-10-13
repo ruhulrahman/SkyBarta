@@ -29,11 +29,11 @@ class AuthServiceProvider extends ServiceProvider
             return $user->role_id === 2;
         });
 
-        Gate::define('isAuthor', function ($user) {
+        Gate::define('isUser', function ($user) {
             return $user->role_id === 3;
         });
 
-        Gate::define('isUser', function ($user) {
+        Gate::define('isAuthor', function ($user) {
             return $user->role_id === 4;
         });
 

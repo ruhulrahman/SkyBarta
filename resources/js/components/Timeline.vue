@@ -246,7 +246,7 @@
                       <div class="form-group row">
                         <label for="inputdob" class="col-sm-2 col-form-label">Date of Birth</label>
                         <div class="col-sm-10">
-                          <input type="text" v-model="form.dob" class="form-control" id="inputdob" placeholder="date of birth" :class="{ 'is-invalid': form.errors.has('dob') }">
+                          <input type="date" v-model="form.dob" class="form-control" id="inputdob" placeholder="date of birth" :class="{ 'is-invalid': form.errors.has('dob') }">
                           <has-error :form="form" field="dob"></has-error>
                         </div>
                       </div>
@@ -1021,6 +1021,11 @@
                     })
                     .catch(()=>{
                       this.$Progress.fail()
+                      swal.fire(
+                                'Profile update failed!',
+                                'Something wrong here.',
+                                'error'
+                                )
                     });                
             },
             updateUserLocation(){
