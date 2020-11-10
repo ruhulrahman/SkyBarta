@@ -1,5 +1,8 @@
 <?php
 
+use Illuminate\Support\Facades\App;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Broadcast;
 
 /*
@@ -13,7 +16,8 @@ use Illuminate\Support\Facades\Broadcast;
 |
 */
 
-Route::get('/', function () {
+Route::get('/{lang?}', function ($lang=null) {
+    App::setLocale($lang);
     return view('welcome');
 });
 

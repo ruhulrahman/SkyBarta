@@ -33,9 +33,14 @@ class UserController extends Controller
     }
 
 
+    public function rollingUser()
+    {
+        return User::with(['blood', 'profession','gender','religion','relation'])->whereIn('role_id', [1, 2, 4])->get();
+    }
+
     public function userten()
     {
-        return User::with(['blood', 'profession'])->latest()->paginate(10);
+        return User::with(['blood', 'profession','gender','religion','relation'])->latest()->paginate(10);
     }
 
     public function user_auth_id()

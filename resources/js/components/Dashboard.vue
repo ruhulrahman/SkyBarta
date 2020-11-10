@@ -1030,6 +1030,7 @@
       </div><!--/. container-fluid -->
       <div class="container-fluid" v-else>
         <h3 class="text-center">Welcome to <span class="text-primary">Social Site BD</span></h3>
+        <p class="text-justify">The modern world almost wholly depends on advanced social media.  With our project is Social site bd., our life is fully influenced by modern social media  -based devices like Facebook, Instagram, Skype, Social site bd etc and so on. However, we cannot think a single day without the magical social site. Due to easy usage, people from all classes widely use it for many purposes. Nowadays, Social site bd works like all in one. On the one hand, it offers instant message, net photo share, share blood group, watching videos, connecting social media, source of entertainment, important work and many more. We are blessed with this device without any doubt as it puts our modern life forward many steps ahead. On the other hand, people of all age groups are spending most of their time using the social media (Social site bd). Owing to its excessive usage, one may face lots of problems such as depression, chronic pain, distraction, sleepless night and many more which are threatening for people. In this paper, we try to find out how much time people spend on various social site activities such as communication. As for spending much time on these activities causes harmful for humans, its so much helpful for our people!</p>
       </div>
     </section>
 

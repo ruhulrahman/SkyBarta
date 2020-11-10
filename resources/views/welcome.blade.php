@@ -1,5 +1,6 @@
 <?php
 $siteinfo = DB::table('site_infos')->whereIn('user_id', [1,2])->first();
+//$siteinfo = DB::table('site_infos')->first();
 ?>
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
@@ -107,7 +108,7 @@ $siteinfo = DB::table('site_infos')->whereIn('user_id', [1,2])->first();
 
             <div class="content">
                 <div class="title m-b-mdtop">
-                    <b>Welcome to <span class="blue">{{ $siteinfo->title }}</span></b>
+                    <b>{{ __('header.welc') }} {{ config('app.locale') }} <span class="blue">{{ $siteinfo->title }}</span></b>
                 </div>
 
                 <div class="links">

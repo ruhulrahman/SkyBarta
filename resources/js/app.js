@@ -81,7 +81,7 @@ let routes = [
     { path: '/gender', component: require('./components/Gender.vue').default },
     { path: '/skill', component: require('./components/job/Skill.vue').default },
     { path: '/role', component: require('./components/Role.vue').default },
-    // { path: '/user-role', component: require('./components/UserRole.vue').default },
+    { path: '/user-role', component: require('./components/UserRole.vue').default },
     // { path: '/user-skill', component: require('./components/UserSkill.vue').default },
 
     { path: '/find-friends', component: require('./components/FindFriends.vue').default },
@@ -161,20 +161,20 @@ Vue.component('pagination', require('laravel-vue-pagination'));
 
 
 //Passposrt component
-Vue.component(
-    'passport-clients',
-    require('./components/passport/Clients.vue').default
-);
+// Vue.component(
+//     'passport-clients',
+//     require('./components/passport/Clients.vue').default
+// );
 
-Vue.component(
-    'passport-authorized-clients',
-    require('./components/passport/AuthorizedClients.vue').default
-);
+// Vue.component(
+//     'passport-authorized-clients',
+//     require('./components/passport/AuthorizedClients.vue').default
+// );
 
-Vue.component(
-    'passport-personal-access-tokens',
-    require('./components/passport/PersonalAccessTokens.vue').default
-);
+// Vue.component(
+//     'passport-personal-access-tokens',
+//     require('./components/passport/PersonalAccessTokens.vue').default
+// );
 
 
 //My component

@@ -22,6 +22,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Broadcast::routes();
 
 Route::apiResources([
+    'auth' => 'API\AuthController',
     'user' => 'API\UserController',
     'gender' => 'API\GenderController',
     'relation' => 'API\RelationController',
@@ -63,6 +64,10 @@ Route::apiResources([
 Route::get('findJob', 'API\JobController@findJob');
 
 //JobController
+Route::post('register', 'API\AuthController@register');
+Route::post('login', 'API\AuthController@login');
+
+//JobController
 Route::get('jobapplyCheck/{id}', 'API\JobApplyController@jobapplyCheck');
 Route::get('jobapplicants/{id}', 'API\JobApplyController@jobapplicants');
 
@@ -91,6 +96,7 @@ Route::get('likeCount/{post_id}', 'API\LikeController@likeCount');
 
 
 //UserController
+Route::get('rollingUser', 'API\UserController@rollingUser');
 Route::get('userten', 'API\UserController@userten');
 Route::get('user-auth-id', 'API\UserController@user_auth_id');
 Route::get('timeline', 'API\UserController@timeline');

@@ -17,7 +17,7 @@ export default class Gate {
 
 
     isSuperAdmin() {
-        return this.user.role_id === 1
+        return this.user.role.name === 'Super'
     }
 
     isAdmin() {

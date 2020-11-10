@@ -12,8 +12,8 @@ class SiteInfoController extends Controller
 
     public function index()
     {
-        $user_id = auth('api')->user()->id;
-        return SiteInfo::where('user_id', $user_id)->first();
+        // $user_id = auth('api')->user()->id;
+        return SiteInfo::first();
     }
 
     public function create()
@@ -27,7 +27,7 @@ class SiteInfoController extends Controller
         $this->validate($request, [
             'title' => 'required|string',
             'short_name' => 'required|string',
-            'description' => 'required|string',
+            'description' => 'required',
         ]);
 
         return SiteInfo::create([
@@ -57,7 +57,7 @@ class SiteInfoController extends Controller
         $this->validate($request, [
             'title' => 'required|string',
             'short_name' => 'required|string',
-            'description' => 'required|string',
+            'description' => 'required',
         ]);
 
         $SiteInfo->update($request->all());

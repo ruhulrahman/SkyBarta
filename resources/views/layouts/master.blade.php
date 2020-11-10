@@ -320,7 +320,7 @@ $siteinfo = DB::table('site_infos')->whereIn('user_id', [1,2])->first();
           </li>
           @endcanany
 
-          @canany(['isUser','isAdmin','isAuthor', 'isSuperAdmin'])
+          
           <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-cog yellow"></i>
@@ -344,7 +344,6 @@ $siteinfo = DB::table('site_infos')->whereIn('user_id', [1,2])->first();
               </li>
             </ul>
           </li>
-          @endcanany
 
           @canany(['isAdmin', 'isSuperAdmin'])
           <li class="nav-item has-treeview">
